@@ -6,6 +6,17 @@
   padding: 0;
 }
 
+.upload-button {
+    font-size: 1rem;
+    background-color: #006CFF;
+    border-radius: 4px;
+    width: 154px;
+    height: 56px;
+    color: white;
+    border: none;
+    margin: 3em 40em;
+}
+
 .modal-background {
   background-color: rgba(64, 64, 64, 0.6);
   width: 100%;
@@ -16,13 +27,12 @@
 }
 
 .modal-container {
-  background-color: #FEFEFD;
-  width: 55%;
-  margin: 8em auto 0;
+  background-color: #fefefd;
   border: 0;
   border-radius: 1rem;
+  margin: 0.5em auto;
   padding: 0;
-  
+  width: 60%;
 }
 
 .modal-header {
@@ -153,5 +163,3 @@
   background-color: blue;
   height: 100%;
 }
-
-/* p tag style={{  }} */
