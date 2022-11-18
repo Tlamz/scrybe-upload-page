@@ -10,11 +10,10 @@
     font-size: 1rem;
     background-color: #006CFF;
     border-radius: 4px;
-    width: 154px;
-    height: 56px;
+    padding: 1.5em 3.625em;
+    margin: 0 auto;
     color: white;
     border: none;
-    margin: 3em 40em;
 }
 
 .modal-background {
