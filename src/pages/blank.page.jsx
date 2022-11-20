@@ -5,11 +5,11 @@ import {Modal} from "../components/modal.component"
 export function BlankPage () {
 const [showModal, setShowModal] = useState(false);
   return (
-    <div className="upload-button">
-      <button onClick={() => setShowModal(true)}>
+    <>
+      <button className="upload-button" onClick={() => setShowModal(true)}>
         Upload
       </button>
       {showModal && <Modal closeModal={setShowModal} />}
-    </div>
+    </>
   );
 }
