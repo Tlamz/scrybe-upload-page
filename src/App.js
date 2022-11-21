@@ -12,6 +12,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/scrybe-upload-page" element={<BlankPage />} />
+          {/* <Route index element={<BlankPage />} /> */}
           {/* <Route path="/place" element={<Place />} /> */}
         </Routes>
       </BrowserRouter>
