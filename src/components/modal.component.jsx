@@ -55,7 +55,7 @@ function DropDown({
   return (
     <div className="files-toggle">
       <p>All Files</p>
-      <div>
+      <div className="arrow-down">
         {showDropDownIcon && (
           <img src={arrowDown} alt="down-chevron" onClick={() => action()} />
         )}
@@ -74,17 +74,17 @@ function DragAndDrop({ setShowUploadProgress }) {
   return (
     <section className="drag-and-drop">
       <img src={layer} alt="" />
-      <h3>
-        Drag and drop agent audio call <br /> recordings
-      </h3>
+      <h3>Drag and drop agent audio call recordings</h3>
       <div className="or-wrapper">
-        <hr />
-        <p className="or">or</p>
+        <div className="left-or"></div>
+        <div className="or">
+          <p>OR</p>
+        </div>
+        <div className="right-or"></div>
       </div>
-      <p className="small-text">
-        Audio files must be smaller than 10mb
-      </p>
+      <p className="small-text">Audio files must be smaller than 10mb</p>
       {/* <button>Browse Files</button> */}
+      {/* <input type="file" hidden style={{ display: "none" }} /> */}
       <PrimaryButton text="Browse Files" onClick={showUploadProgress} />
     </section>
   );
@@ -99,7 +99,7 @@ function UploadProgress() {
           <img src={uploadIcon} alt="folder-icon" />
           <p>12/30</p>
         </div>
-        <div className="upload-progress-status">
+        <div className="upload-progress-status1">
           <p>Uploading...</p>
           <p>File name</p>
           <div className="progress-wrapper">
@@ -131,7 +131,7 @@ function SubUploadProgress() {
       <div className="upload-icon">
         <img src={uploadIcon} alt="folder-icon" />
       </div>
-      <div className="upload-progress-status">
+      <div className="upload-progress-status2">
         <p className="text-bold">ALICE AUDIO RECORDING</p>
         <p className="small-text-light" >12 June 2022 at 12:00 pm. 1.4 Mb / 4.2 Mb</p>
       </div>
